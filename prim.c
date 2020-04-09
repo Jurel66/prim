@@ -14,8 +14,6 @@ int main(int argc, char* argv[]) {
     printf("Adja meg y erteket\n");
     scanf("%d", &fmeret);
 
-    clock_t start = clock();
-
     int *prim = (int*)malloc((n+1) * sizeof(int));
     for (int i = 2; i <= n; i++) {
         prim[i] = i;
@@ -68,11 +66,6 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    clock_t stop = clock();
-    double time_spent = (double)(stop - start) / CLOCKS_PER_SEC;
-	double time_spenth = floor(time_spent/3600), time_spentm = floor(time_spent/60)-time_spenth*60, time_spents = time_spent-time_spenth*3600-time_spentm*60;
-    printf("Befejezve %.0fh %.0fm %.0fs alatt.\n", time_spenth, time_spentm, time_spents);
-    
     //fclose(out);
     free(prim);
     printf("A kilepeshez nyomjon entert.\n");
