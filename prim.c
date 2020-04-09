@@ -66,7 +66,6 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    //fclose(out);
     free(prim);
     printf("A kilepeshez nyomjon entert.\n");
     getchar();
