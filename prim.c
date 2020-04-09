@@ -6,9 +6,13 @@
 
 int main(int argc, char* argv[]) {
 
-    int n=1000000, fmeret=100;
+    int n, fmeret;
     
-    
+    printf("x-ig megkeresi a primszamokat es y hosszu fajlokba menti\n");
+	printf("Adja meg x erteket\n");
+    scanf("%d", &n);
+    printf("Adja meg y erteket\n");
+    scanf("%d", &fmeret);
 
     clock_t start = clock();
 
